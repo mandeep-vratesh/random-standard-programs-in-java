@@ -23,9 +23,7 @@ public class Excercise1 {
         String input = sc.nextLine();
         //symbolic to IP
         InetAddress address = InetAddress.getByName(input);
-        for(byte i : address.getAddress()){
-            System.out.print(i+".");
-        }
+        System.out.print(address.getHostAddress());
         
         System.out.println();
         
